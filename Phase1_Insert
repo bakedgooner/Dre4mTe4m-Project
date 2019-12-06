@@ -1,0 +1,25 @@
+set sql_safe_updates = 0;
+
+insert into teams values ('10101', 'Dallas Cowboys', 'Texas');
+insert into teams values ('10102', 'Detroit Lions', 'Michigan');
+insert into teams values ('10103', 'San Francisco 49ers', 'San Francisco');
+insert into teams values ('10104', 'Miami Dolphins', 'Miami');
+insert into teams values ('10105', 'Minnesota Vikings', 'Minnesota');
+
+insert into players values ('11111', '10101', 'Jerry', 'Rice', 'WR', '200', '20000', '1000000');
+insert into players values ('22222', '10102', 'Barry', 'Sanders', 'RB', '110', '15000', '5000000');
+insert into players values ('33333', '10103', 'Joe', 'Montana', 'QB', '500', '40000', '2500000');
+insert into players values ('44444', '10104', 'Dan', 'Marino', 'QB', '700', '55000', '3000000');
+insert into players values ('55555', '10105', 'Cris', 'Carter', 'WR', '160', '18000', '1500000');
+
+insert into games values ('10001', '19901111', 'The Minneapolis MetroDome', 'L', '55000', '1200000');
+insert into games values ('20002', '19881217', 'Arrowhead Stadium', 'W', '67000', '1600000');
+insert into games values ('30003', '19850105', 'Soldier Field', 'L', '59000', '1300000');
+insert into games values ('40004', '19980929', 'The RCA Dome', 'W', '70000', '2100000');
+insert into games values ('50005', '19941021', 'Lambeau Field', 'W', '55000', '1200000');
+
+insert into play values ('44444', '10001');
+insert into play values ('55555', '10001');
+insert into play values ('33333', '20002');
+insert into play values ('22222', '30003');
+insert into play values ('11111', '50005');
